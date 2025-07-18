@@ -12,7 +12,7 @@ class Post(Base):
     user_id = Column(Integer, ForeignKey("users.id", ondelete="CASCADE"), nullable=  False)
     user = relationship("User")
 
-class User(Base):
+class User(Base):   
     __tablename__ = 'users'
     id = Column(Integer, primary_key=True, nullable=False)
     email = Column(String, unique=True, nullable=False)

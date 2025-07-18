@@ -2,12 +2,12 @@ from fastapi import FastAPI
 from fastapi.middleware.cors import CORSMiddleware
 # import psycopg2
 # from psycopg2.extras import RealDictCursor
-from . import models
-from .database import engine
+# from . import models
+# from .database import engine
 from .routers import user, post, auth, vote
-from .config import Setting
+# from .config import Setting
 
-# models.Base.metadata.create_all(bind=engine) #this what create all of tables when we havve not started using alembic
+# models.Base.metadata.create_all(bind=engine) #this what create all of tables when we have not started using alembic
 
 app = FastAPI()
 
